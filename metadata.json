@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Humane EDUCATION AND EMPOWERMENT FOUNDATION (HEdEF)",
+  "description": "HEdEF is dedicated to ensuring every child learns and every youth earns through quality education and economic empowerment.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
