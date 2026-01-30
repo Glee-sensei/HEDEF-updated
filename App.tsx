@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Programs from './components/Programs';
@@ -77,10 +76,10 @@ const HomePage = () => {
                 <p className="italic text-slate-700 text-sm md:text-base">"We seek to educate the growing age and empower the working age—aligning directly with global sustainable development efforts."</p>
               </div>
               <div className="flex pt-4">
-                <a href="#/about" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-teal-500/20 inline-flex items-center">
+                <Link to="/about" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-teal-500/20 inline-flex items-center">
                   Learn Our Story
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -156,17 +155,12 @@ const HomePage = () => {
             "Join us in this transformative journey toward a more <span className="text-red-500">educated</span> and <span className="text-teal-400">empowered</span> society."
           </h2>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
-            <a href="#/donate" className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold transition-all shadow-xl shadow-red-900/40 transform hover:scale-105 hover:-translate-y-1 inline-flex items-center justify-center">
-              Become a Sponsor
-            </a>
-            <a 
-              href="https://forms.gle/JwR9UUBc5pW58upq9" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="w-full sm:w-auto border-2 border-white/20 hover:bg-white/10 px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center justify-center"
-            >
-              Volunteer With Us
-            </a>
+            <Link to="/partner" className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold transition-all shadow-xl shadow-red-900/40 transform hover:scale-105 hover:-translate-y-1 inline-flex items-center justify-center">
+              Become a Partner
+            </Link>
+            <Link to="/donate" className="w-full sm:w-auto border-2 border-white/20 hover:bg-white/10 px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center justify-center">
+              Make a Donation
+            </Link>
           </div>
         </div>
       </section>

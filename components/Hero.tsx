@@ -51,9 +51,12 @@ const Hero: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
               </a>
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold text-base md:text-lg transition-all transform hover:-translate-y-1 shadow-2xl shadow-red-900/50">
+              <a 
+                href="#/partner"
+                className="bg-red-600 hover:bg-red-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold text-base md:text-lg transition-all transform hover:-translate-y-1 shadow-2xl shadow-red-900/50 flex items-center justify-center"
+              >
                 Partner with HEdEF
-              </button>
+              </a>
             </div>
           </div>
         </div>
