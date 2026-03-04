@@ -64,10 +64,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 bg-white border-b border-slate-100 ${isScrolled ? 'shadow-lg py-2' : 'py-3 md:py-4'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 bg-white border-b border-slate-100 overflow-hidden ${isScrolled ? 'shadow-lg py-2' : 'py-3 md:py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center scale-90 md:scale-100 transform origin-left" onClick={() => window.scrollTo(0, 0)}>
+        <Link to="/" className={`flex items-center transform origin-left transition-all duration-300 ${isScrolled ? 'scale-[0.65] md:scale-75' : 'scale-90 md:scale-100'}`} onClick={() => window.scrollTo(0, 0)}>
           <Logo light={false} />
         </Link>
 
