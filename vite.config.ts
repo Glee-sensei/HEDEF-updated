@@ -11,10 +11,6 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-<<<<<<< HEAD
-=======
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
->>>>>>> f8da046374323c619051715972594b6e41aed10e
         'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
       },
       resolve: {

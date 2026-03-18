@@ -4,25 +4,10 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 
 const Navbar: React.FC = () => {
-<<<<<<< HEAD
-=======
-  const [isScrolled, setIsScrolled] = useState(false);
->>>>>>> f8da046374323c619051715972594b6e41aed10e
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-<<<<<<< HEAD
-=======
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
->>>>>>> f8da046374323c619051715972594b6e41aed10e
   // Sync body scroll with menu state
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -49,7 +34,6 @@ const Navbar: React.FC = () => {
     if (path.startsWith('/#')) {
       e.preventDefault();
       const elementId = path.substring(2);
-<<<<<<< HEAD
       const offset = 80; // Height of fixed navbar
       
       const scrollToElement = (id: string) => {
@@ -64,27 +48,15 @@ const Navbar: React.FC = () => {
         }
       };
 
-=======
-      
->>>>>>> f8da046374323c619051715972594b6e41aed10e
       if (location.pathname !== '/') {
         // If not on home page, navigate home first then scroll
         navigate('/');
         // Use a timeout to wait for the page to render before scrolling
         setTimeout(() => {
-<<<<<<< HEAD
           scrollToElement(elementId);
         }, 300);
       } else {
         scrollToElement(elementId);
-=======
-          const element = document.getElementById(elementId);
-          if (element) element.scrollIntoView({ behavior: 'smooth' });
-        }, 300);
-      } else {
-        const element = document.getElementById(elementId);
-        if (element) element.scrollIntoView({ behavior: 'smooth' });
->>>>>>> f8da046374323c619051715972594b6e41aed10e
       }
     } else if (path === '/') {
       e.preventDefault();
@@ -94,17 +66,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-<<<<<<< HEAD
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-white border-b border-slate-100 py-4 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center transform origin-left" onClick={() => window.scrollTo(0, 0)}>
-=======
-    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 bg-white border-b border-slate-100 overflow-hidden ${isScrolled ? 'shadow-lg py-2' : 'py-3 md:py-4'}`}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className={`flex items-center transform origin-left transition-all duration-300 ${isScrolled ? 'scale-[0.65] md:scale-75' : 'scale-90 md:scale-100'}`} onClick={() => window.scrollTo(0, 0)}>
->>>>>>> f8da046374323c619051715972594b6e41aed10e
           <Logo light={false} />
         </Link>
 

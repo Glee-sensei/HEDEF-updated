@@ -5,14 +5,9 @@ const Team: React.FC = () => {
     {
       name: "Augustine Obhiomezele Ifada",
       role: "Chairman",
-<<<<<<< HEAD
       image: "https://raw.githubusercontent.com/Glee-sensei/HEDEF-updated/f8da046374323c619051715972594b6e41aed10e/Austin%20new.jpg",
       quote: "Leadership with integrity. \"Impact with purpose\"",
       objectPosition: "object-top",
-=======
-      image: "https://raw.githubusercontent.com/Glee-sensei/HEDEF-updated/0f4eb1b4e61a8660bd255347276755314bc4e26b/AUSTIN1.jpg",
-      quote: "Leadership with integrity. \"Impact with purpose\"",
->>>>>>> f8da046374323c619051715972594b6e41aed10e
       bio: [
         "Augustine Obhiomezele Ifada is a seasoned leader and governance-focused professional whose work is anchored in ethical leadership, institutional strength, and sustainable social impact. As Chairman of the Humane Education and Empowerment Foundation (HEdEF), he provides strategic oversight and board leadership that guide the organization’s mission, accountability, and long-term sustainability.",
         "With a strong appreciation for the role of sound governance in development outcomes, Augustine supports HEdEF’s efforts to advance quality education, youth empowerment, and inclusive economic growth. His leadership aligns closely with the United Nations Sustainable Development Goals (SDGs), particularly SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), SDG 1 (No Poverty), and SDG 10 (Reduced Inequalities).",
@@ -61,10 +56,7 @@ const Team: React.FC = () => {
       role: "Human Resources Lead",
       image: "https://raw.githubusercontent.com/Glee-sensei/HEDEF-updated/3297d369972d279338f2568e1aa30e7924206748/Sammy%202.jpg.jpeg", 
       quote: "Sustainable impact begins with empowered people and inclusive systems.",
-<<<<<<< HEAD
       objectPosition: "object-top",
-=======
->>>>>>> f8da046374323c619051715972594b6e41aed10e
       bio: [
         "Ikhayere Samson Samuel is a people-focused development professional and first-class graduate of Microbiology from the University of Benin (UNIBEN), where he earned a CGPA of 4.80/5.0 and multiple academic distinctions, including Best Graduating Student and Scholar Awards for outstanding performance across multiple academic levels.",
         "At the Humane Education and Empowerment Foundation (HEdEF), Samson plays a critical role in strengthening the organization’s human capital and institutional culture. His work in human resources aligns closely with the Sustainable Development Goals, particularly SDG 4 (Quality Education) through capacity building and mentorship, SDG 8 (Decent Work and Economic Growth) through people development and ethical work practices, and SDG 10 (Reduced Inequalities) through inclusive engagement.",
@@ -72,7 +64,6 @@ const Team: React.FC = () => {
         "He is an active member of the ForbesBLK community, the American Society for Microbiology (ASM), and the British Society for Antimicrobial Chemotherapy (BSAC). He is also an EducationUSA Opportunity Fund Program (OFP) 2024/2025 Scholar, reflecting his continued pursuit of excellence and global exposure.",
         "With a proven track record in leadership—as President of the Nigerian Association of Microbiology Students (NAMS), UNIBEN—Samson brings strong organizational, mentorship, and people-management skills to HEdEF. He remains deeply committed to building inclusive teams, nurturing talent, and supporting systems that enable individuals and organizations to thrive."
       ]
-<<<<<<< HEAD
     },
     {
       name: "Matthew George Eshokhai",
@@ -83,8 +74,6 @@ const Team: React.FC = () => {
         "Matthew George Eshokhai is a development practitioner and community-focused leader committed to advancing sustainable and inclusive progress. He holds a Bachelor of Science degree in Microbiology from the University of Benin, where his passion for leadership and service first took shape. During his undergraduate years, he served as Speaker of the Congress of the National Association of Microbiology Students and represented the Faculty of Life Sciences in the Student Union Electoral Commission.",
         "Matthew’s work is strongly aligned with the Sustainable Development Goals, particularly in areas of quality education, youth empowerment, and reduced inequalities. As a co-founder of the Humane Education and Empowerment Foundation (HEdEF), he supports initiatives that educate the growing age and empower the working age, contributing to meaningful community transformation."
       ]
-=======
->>>>>>> f8da046374323c619051715972594b6e41aed10e
     }
   ];
 
@@ -107,7 +96,6 @@ const Team: React.FC = () => {
                 <div className="w-full lg:w-2/5">
                   <div className="relative">
                     {/* Decorative background shape */}
-<<<<<<< HEAD
                     <div className={`absolute -top-4 ${index % 2 === 0 ? '-left-4' : '-right-4'} md:-top-6 ${index % 2 === 0 ? 'md:-left-6' : 'md:-right-6'} w-full h-full bg-teal-50 rounded-full -z-10 hidden sm:block`}></div>
                     
                     <div className="bg-white p-4 md:p-6 rounded-full shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-slate-100 flex flex-col items-center">
@@ -134,36 +122,6 @@ const Team: React.FC = () => {
                       <div className="px-1 md:px-2 text-center">
                         <h3 className="text-xl md:text-2xl font-serif text-slate-900 leading-tight">{member.name}</h3>
                         <p className="text-teal-600 font-bold uppercase tracking-wider text-xs md:text-sm mt-1">{member.role}</p>
-=======
-                    <div className={`absolute -top-4 ${index % 2 === 0 ? '-left-4' : '-right-4'} md:-top-6 ${index % 2 === 0 ? 'md:-left-6' : 'md:-right-6'} w-full h-full bg-teal-50 rounded-3xl -z-10 hidden sm:block`}></div>
-                    
-                    <div className="bg-white p-4 md:p-6 rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-slate-100">
-                      <div className="aspect-square sm:aspect-[4/5] lg:aspect-square rounded-2xl overflow-hidden mb-6 bg-slate-100">
-                        <img 
-                          src={member.image} 
-                          alt={member.name} 
-                          className="w-full h-full object-cover transition-all duration-700 transform hover:scale-105"
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop";
-                          }}
-                        />
-                      </div>
-                      
-                      <div className="px-1 md:px-2 text-center lg:text-left">
-                        <h3 className="text-xl md:text-2xl font-serif text-slate-900 leading-tight">{member.name}</h3>
-                        <p className="text-teal-600 font-bold uppercase tracking-wider text-xs md:text-sm mt-1">{member.role}</p>
-                        
-                        <div className="mt-6 md:mt-8 pt-6 border-t border-slate-100">
-                          <div className="relative">
-                            <svg className={`absolute -top-3 ${index % 2 === 0 ? '-left-2' : 'left-0'} w-6 h-6 md:w-8 md:h-8 text-teal-100`} fill="currentColor" viewBox="0 0 32 32">
-                              <path d="M10 8v8h6l-3 6h-6l3-6h-3v-8h3zM22 8v8h6l-3 6h-6l3-6h-3v-8h3z" />
-                            </svg>
-                            <p className="text-slate-700 italic font-medium relative z-10 pl-6 text-sm md:text-base leading-relaxed">
-                              {member.quote}
-                            </p>
-                          </div>
-                        </div>
->>>>>>> f8da046374323c619051715972594b6e41aed10e
                       </div>
                     </div>
                   </div>
