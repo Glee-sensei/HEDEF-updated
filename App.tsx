@@ -173,7 +173,11 @@ const App: React.FC = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
+<<<<<<< HEAD
         <div className="flex-grow pt-20">
+=======
+        <div className="flex-grow pt-[72px] md:pt-[88px]">
+>>>>>>> f8da046374323c619051715972594b6e41aed10e
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />

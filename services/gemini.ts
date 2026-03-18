@@ -2,7 +2,11 @@
 import { GoogleGenAI } from "@google/genai";
 import { ChatMessage } from "../types";
 
+<<<<<<< HEAD
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+=======
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+>>>>>>> f8da046374323c619051715972594b6e41aed10e
 
 const SYSTEM_INSTRUCTION = `
 You are Hedi, the AI assistant for the Humane EDUCATION AND EMPOWERMENT FOUNDATION (HEdEF).
