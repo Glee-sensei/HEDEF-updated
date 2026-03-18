@@ -182,7 +182,7 @@ const App: React.FC = () => {
           </Routes>
         </div>
         <Footer />
-        < AIAssistant />
+        <AIAssistant />
       </div>
     </Router>
   );
